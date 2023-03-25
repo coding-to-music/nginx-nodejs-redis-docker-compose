@@ -1,0 +1,13 @@
+{
+  "name": "nginx-nodejs-redis-docker-compose",
+  "version": "1.0.0",
+  "description": "Docker Compose of a Node.js application with Nginx proxy and Redis database",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "git add . && git commit -m Build && git push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
