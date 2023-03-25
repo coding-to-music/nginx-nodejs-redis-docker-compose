@@ -125,15 +125,18 @@ After the application starts, navigate to `http://localhost:80` in your web brow
 ```
 curl localhost:80
 curl localhost:80
+
 web1: Total number of visits is: 1
 ```
 
 ```
 curl localhost:80
+
 web1: Total number of visits is: 2
 ```
 ```
-$ curl localhost:80
+curl localhost:80
+
 web2: Total number of visits is: 3
 ```
 
@@ -142,6 +145,6 @@ web2: Total number of visits is: 3
 ## Stop and remove the containers
 
 ```
-$ docker compose down
+docker compose down
 ```
 
