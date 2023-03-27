@@ -140,6 +140,16 @@ curl localhost:80
 web2: Total number of visits is: 3
 ```
 
+```
+npm run preinstall
+npm run clean
+npm run resetdb
+
+npm run ioredis-example
+
+npm run simulation
+```
+
 
 
 ## Stop and remove the containers
