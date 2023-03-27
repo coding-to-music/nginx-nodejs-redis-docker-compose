@@ -7,9 +7,12 @@
     "deploy": "git add . && git commit -m Build && git push",
     "docker:build": "docker-compose build",
     "redis-cli": "docker exec -it redis redis-cli",
-    "simulation": "npm i; node ./simulation.js",
+    "simulation": "node ./simulation.js",
+    "ioredis-example": "node ./ioredis-example.js",
     "start": "docker-compose pull && docker-compose up --build --remove-orphans",
     "stop": "docker-compose down",
+    "preinstall": "npm ci",
+    "resetdb": "redis-cli flushall",
     "clean": "bash ./purge-all.sh"
   },
   "keywords": [],
