@@ -30,7 +30,7 @@ redis.ping((err, result) => {
     console.log(`XXXXXXYYYYYYY Redis connection error. Response: ${err}`);
     console.error(err);
   } else {
-    console.log(`XXXXXX Redis connection successful. Response: ${result}`);
+    console.log(`XXXXXX1111111 Redis connection successful. Response: ${result}`);
   }
 });
 
@@ -46,10 +46,10 @@ console.log(`XXXXXXZZZZZZZZ BEGIN redisClient.ping`);
 
 redisClient.ping((err, result) => {
   if (err) {
-    console.log(`XXXXXXYYYYYYY Redis connection error. Response: ${err}`);
+    console.log(`XXXXXXYYYYYYY redisClient Redis connection error. Response: ${err}`);
     console.error(err);
   } else {
-    console.log(`XXXXXX Redis connection successful. Response: ${result}`);
+    console.log(`XXXXXX222222 redisClient Redis connection successful. Response: ${result}`);
   }
 });
 
