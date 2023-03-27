@@ -107,7 +107,7 @@ function submitOrder(err, result) {
    * @see https://redis.io/commands/xadd
    */
   setTimeout(function () {
-    redisClient.xadd("orders", "*", "id", genId(), "customer", result);
+    redis.xadd("orders", "*", "id", genId(), "customer", result);
   }, Math.floor(Math.random() * 1000));
 }
 
@@ -118,7 +118,7 @@ function newCustomer() {
   /**
    * Registering new customer
    */
-  redisClient.xadd("queue:customers", "*", "id", genId(), submitOrder);
+  redis.xadd("queue:customers", "*", "id", genId(), submitOrder);
 
   /**
    * Waiting for the next
