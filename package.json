@@ -10,6 +10,7 @@
     "simulation": "node ./simulation.js",
     "ioredis-example": "node ./ioredis-example.js",
     "start": "docker-compose pull && docker-compose up --build --remove-orphans",
+    "start:resume": "docker-compose up",
     "stop": "docker-compose down",
     "preinstall": "npm ci",
     "resetdb": "redis-cli flushall",
